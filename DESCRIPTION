@@ -11,5 +11,16 @@ Description: Designing surveys require relevant datasets to be used as basis for
     can be used for estimating indicator variance and design effects. This package
     contains relevant datasets for use in designing surveys in Mozambique.
 License: GPL-3
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    rgdal,
+    rgeos,
+    raster,
+    sf
 Encoding: UTF-8
+Language: en-GB
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+
