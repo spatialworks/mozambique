@@ -19,7 +19,6 @@ unzip(temp, exdir = tempdir())
 adm0 <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm0_ine_20190607")
 adm0$ADM0_PT <- stringi::stri_enc_mark(adm0$ADM0_PT)
 
-
 country <- adm0
 usethis::use_data(country, overwrite = TRUE, compress = "xz")
 
