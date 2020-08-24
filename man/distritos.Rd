@@ -3,26 +3,26 @@
 \docType{data}
 \name{distritos}
 \alias{distritos}
-\title{Mozambique distritos borders}
+\title{Mozambique \emph{distritos} borders}
 \format{
-A SpatialPolygonsDataFrame object containing distritos borders of
+A \code{SpatialPolygonsDataFrame} object containing \emph{distritos} borders of
 Mozambique\tabular{ll}{
    \strong{Variables} \tab \strong{Description} \cr
-   Shape_Leng \tab Shape length \cr
-   Shape_Area \tab Shape area \cr
-   ADM2_PT \tab Administrative area level 2 name in Portuguese \cr
-   ADM2_PCODE \tab Administrative area level 2 postal code \cr
-   ADM2_REF \tab Administrative area level 2 reference \cr
-   ADM2ALT1PT \tab Administrative area level 2 alternative Portuguese name 1 \cr
-   ADM2ALT2PT \tab Administrative area level 2 alternative Portuguese name 2 \cr
-   ADM1_PT \tab Administrative area level 1 name in Portuguese \cr
-   ADM1_PCODE \tab Administrative area level 1 postal code \cr
-   ADM0_EN \tab Administrative area level 0 name in English \cr
-   ADM0_PT \tab Administrative area level 0 name in Portuguese \cr
-   ADM0_PCODE \tab Administrative area level 0 postal code \cr
-   date \tab Date created \cr
-   validOn \tab Data valid on \cr
-   validTo \tab Data valid to \cr
+   \emph{Shape_Leng} \tab Shape length \cr
+   \emph{Shape_Area} \tab Shape area \cr
+   \emph{ADM2_PT} \tab Administrative area level 2 name in Portuguese \cr
+   \emph{ADM2_PCODE} \tab Administrative area level 2 postal code \cr
+   \emph{ADM2_REF} \tab Administrative area level 2 reference \cr
+   \emph{ADM2ALT1PT} \tab Administrative area level 2 alternative Portuguese name 1 \cr
+   \emph{ADM2ALT2PT} \tab Administrative area level 2 alternative Portuguese name 2 \cr
+   \emph{ADM1_PT} \tab Administrative area level 1 name in Portuguese \cr
+   \emph{ADM1_PCODE} \tab Administrative area level 1 postal code \cr
+   \emph{ADM0_EN} \tab Administrative area level 0 name in English \cr
+   \emph{ADM0_PT} \tab Administrative area level 0 name in Portuguese \cr
+   \emph{ADM0_PCODE} \tab Administrative area level 0 postal code \cr
+   \emph{date} \tab Date created \cr
+   \emph{validOn} \tab Data valid on \cr
+   \emph{validTo} \tab Data valid to \cr
 }
 }
 \source{
@@ -32,7 +32,7 @@ https://data.humdata.org/dataset/mozambique-administrative-levels-0-3
 distritos
 }
 \description{
-Mozambique distritos borders
+Mozambique \emph{distritos} borders
 }
 \examples{
 distritos

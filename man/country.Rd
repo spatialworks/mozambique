@@ -5,22 +5,22 @@
 \alias{country}
 \title{Mozambique country borders}
 \format{
-A SpatialPolygonsDataFrame object containing country borders of
+A \code{SpatialPolygonsDataFrame} object containing country borders of
 Mozambique\tabular{ll}{
    \strong{Variables} \tab \strong{Description} \cr
-   Shape_Leng \tab Shape length \cr
-   Shape_Area \tab Shape area \cr
-   ADM0_EN \tab Administrative area level 0 name in English \cr
-   ADM0_PT \tab Administrative area level 0 name in Portuguese \cr
-   ADM0_PCODE \tab Administrative area level 0 postal code \cr
-   ADM0_REF \tab Administrative area level 0 reference \cr
-   ADM0ALT1EN \tab Administrative area level 0 alternative English name 1 \cr
-   ADM0ALT2EN \tab Administrative area level 0 alternative English name 2 \cr
-   ADM0ALT1PT \tab Administrative area level 0 alternative Portuguese name 1 \cr
-   ADM0ALT2PT \tab Administrative area level 0 alternative Portuguese name 2 \cr
-   date \tab Date created \cr
-   validOn \tab Data valid on \cr
-   validTo \tab Data valid to \cr
+   \emph{Shape_Leng} \tab Shape length \cr
+   \emph{Shape_Area} \tab Shape area \cr
+   \emph{ADM0_EN} \tab Administrative area level 0 name in English \cr
+   \emph{ADM0_PT} \tab Administrative area level 0 name in Portuguese \cr
+   \emph{ADM0_PCODE} \tab Administrative area level 0 postal code \cr
+   \emph{ADM0_REF} \tab Administrative area level 0 reference \cr
+   \emph{ADM0ALT1EN} \tab Administrative area level 0 alternative English name 1 \cr
+   \emph{ADM0ALT2EN} \tab Administrative area level 0 alternative English name 2 \cr
+   \emph{ADM0ALT1PT} \tab Administrative area level 0 alternative Portuguese name 1 \cr
+   \emph{ADM0ALT2PT} \tab Administrative area level 0 alternative Portuguese name 2 \cr
+   \emph{date} \tab Date created \cr
+   \emph{validOn} \tab Data valid on \cr
+   \emph{validTo} \tab Data valid to \cr
 }
 }
 \source{

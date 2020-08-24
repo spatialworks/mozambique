@@ -16,22 +16,16 @@ download.file(adm, destfile = temp)
 unzip(temp, exdir = tempdir())
 
 ## Get borders
-adm0 <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm0_ine_20190607")
-adm0$ADM0_PT <- stringi::stri_enc_mark(adm0$ADM0_PT)
-
-country <- adm0
+country <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm0_ine_20190607")
 usethis::use_data(country, overwrite = TRUE, compress = "xz")
 
-adm1 <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm1_ine_20190607")
-provincias <- adm1
-usethis::use_data(provincias, overwrite = TRUE, ccompress = "xz")
+provincias <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm1_ine_20190607")
+usethis::use_data(provincias, overwrite = TRUE, compress = "xz")
 
-adm2 <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm2_ine_20190607")
-distritos <- adm2
+distritos <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm2_ine_20190607")
 usethis::use_data(distritos, overwrite = TRUE, compress = "xz")
 
-adm3 <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm3_ine_20190607")
-postos <- adm3
+postos <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm3_ine_20190607")
 usethis::use_data(postos, overwrite = TRUE, compress = "xz")
 
 ## Download - populated places

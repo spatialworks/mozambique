@@ -3,24 +3,24 @@
 \docType{data}
 \name{provincias}
 \alias{provincias}
-\title{Mozambique provincias borders}
+\title{Mozambique \emph{provincias} borders}
 \format{
-A SpatialPolygonsDataFrame object containing provincias borders of
+A \code{SpatialPolygonsDataFrame} object containing \emph{provincias} borders of
 Mozambique\tabular{ll}{
    \strong{Variables} \tab \strong{Description} \cr
-   Shape_Leng \tab Shape length \cr
-   Shape_Area \tab Shape area \cr
-   ADM1_PT \tab Administrative area level 1 name in Portuguese \cr
-   ADM1_PCODE \tab Administrative area level 1 postal code \cr
-   ADM1_REF \tab Administrative area level 1 reference \cr
-   ADM1ALT1PT \tab Administrative area level 1 alternative Portuguese name 1 \cr
-   ADM1ALT2PT \tab Administrative area level 1 alternative Portuguese name 2 \cr
-   ADM0_EN \tab Administrative area level 0 name in English \cr
-   ADM0_PT \tab Administrative area level 0 name in Portuguese \cr
-   ADM0_PCODE \tab Administrative area level 0 postal code \cr
-   date \tab Date created \cr
-   validOn \tab Data valid on \cr
-   validTo \tab Data valid to \cr
+   \emph{Shape_Leng} \tab Shape length \cr
+   \emph{Shape_Area} \tab Shape area \cr
+   \emph{ADM1_PT} \tab Administrative area level 1 name in Portuguese \cr
+   \emph{ADM1_PCODE} \tab Administrative area level 1 postal code \cr
+   \emph{ADM1_REF} \tab Administrative area level 1 reference \cr
+   \emph{ADM1ALT1PT} \tab Administrative area level 1 alternative Portuguese name 1 \cr
+   \emph{ADM1ALT2PT} \tab Administrative area level 1 alternative Portuguese name 2 \cr
+   \emph{ADM0_EN} \tab Administrative area level 0 name in English \cr
+   \emph{ADM0_PT} \tab Administrative area level 0 name in Portuguese \cr
+   \emph{ADM0_PCODE} \tab Administrative area level 0 postal code \cr
+   \emph{date} \tab Date created \cr
+   \emph{validOn} \tab Data valid on \cr
+   \emph{validTo} \tab Data valid to \cr
 }
 }
 \source{
@@ -30,7 +30,7 @@ https://data.humdata.org/dataset/mozambique-administrative-levels-0-3
 provincias
 }
 \description{
-Mozambique provincias borders
+Mozambique \emph{provincias} borders
 }
 \examples{
 provincias
