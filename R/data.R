@@ -165,3 +165,30 @@
 #
 ################################################################################
 "villages"
+
+
+################################################################################
+#
+#'
+#' Mozambique settlements locations
+#'
+#' @format A `SpatialPointsDataFrame` object containing settlements locations of
+#'   Mozambique
+#'
+#' | **Variables** | **Description** |
+#' | *OBJECTID* | Object identifier |
+#' | *FID_1* | Feature identifier |
+#' | *Sett_Name* | Settlement name |
+#' | *F_CLASS* | Feature class |
+#' | *F_DESIG* | Feature designation |
+#' | *ADM1_Old* | Administrative level 1 name - old |
+#'
+#' @examples
+#' settlements
+#'
+#' @source https://data.humdata.org/dataset/mozambique-settlement-shapefiles
+#'
+#
+################################################################################
+"settlements"
+
