@@ -63,3 +63,12 @@ plot(postos)
 ```
 
 <img src="man/figures/README-adm3-1.png" width="100%" />
+
+### Settlements
+
+``` r
+plot(provincias)
+plot(settlements, pch = 16, cex = 0.2, col = "blue", add = TRUE)
+```
+
+<img src="man/figures/README-settlements-1.png" width="100%" />

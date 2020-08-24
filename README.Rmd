@@ -62,3 +62,9 @@ plot(distritos)
 plot(postos)
 ```
 
+### Settlements
+
+```{r settlements, echo = TRUE, eval = TRUE}
+plot(provincias)
+plot(settlements, pch = 16, cex = 0.2, col = "blue", add = TRUE)
+```
