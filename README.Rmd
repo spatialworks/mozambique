@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# mozambique: Datasets for Designing Surveys in Mozambique
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in Mozambique.
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/spatialworks/mozambique) with:
+
+```{r install, echo = TRUE, eval = TRUE}
+if(!require(remotes)) install.packages("remotes")
+remotes::install_github("spatialworks/mozambique")
+```
+
+## Usage
+
+### Country borders
+
+```{r adm0, echo = TRUE, eval = TRUE}
+library(mozambique)
+library(sp)
+
+plot(country)
+```
+
+### Provincias borders
+
+```{r adm1, echo = TRUE, eval = TRUE}
+plot(provincias)
+```
+
+### Distritos borders
+
+```{r adm2, echo = TRUE, eval = TRUE}
+plot(distritos)
+```
+
+### Postos borders
+
+```{r adm3, echo = TRUE, eval = TRUE}
+plot(postos)
+```
+
