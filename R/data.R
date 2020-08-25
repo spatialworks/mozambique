@@ -144,32 +144,6 @@
 ################################################################################
 #
 #'
-#' Mozambique villages locations
-#'
-#' @format A `SpatialPointsDataFrame` object containing villages locations of
-#'   Mozambique
-#'
-#' | **Variables** | **Description** |
-#' | *osm_id* | OpenStreetMap Identifier |
-#' | *name* | Name of location |
-#' | *source* | Source of location data |
-#' | *population* | Population size |
-#' | *is_in* | Is in what country location |
-#' | *place* | Type of location |
-#'
-#' @examples
-#' villages
-#'
-#' @source https://data.humdata.org/dataset/hotosm_moz_populated_places
-#'
-#
-################################################################################
-"villages"
-
-
-################################################################################
-#
-#'
 #' Mozambique settlements locations
 #'
 #' @format A `SpatialPointsDataFrame` object containing settlements locations of
