@@ -1,13 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mozambique: Datasets for Designing Surveys in Mozambique
+# mozambique: Datasets for Designing Surveys in Mozambique <img src="https://www.cia.gov/library/publications/resources/the-world-factbook/attachments/flags/MZ-flag.jpg" align="right" width="200px" />
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-![R-CMD-check](https://github.com/spatialworks/mozambique/workflows/R-CMD-check/badge.svg)
+[![R-CMD-check](https://github.com/spatialworks/mozambique/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
 [![CodeFactor](https://www.codefactor.io/repository/github/spatialworks/mozambique/badge)](https://www.codefactor.io/repository/github/spatialworks/mozambique)
 <!-- badges: end -->
 
