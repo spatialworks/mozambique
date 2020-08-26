@@ -2,7 +2,8 @@ Package: mozambique
 Type: Package
 Title: Datasets for Designing Surveys in Mozambique
 Version: 0.1.0
-Authors@R: person("Ernest", "Guevarra", comment = c(ORCID = "0000-0002-4887-4415"), 
+Authors@R: person("Ernest", "Guevarra", 
+    comment = c(ORCID = "0000-0002-4887-4415"), 
     email = "ernest@guevarra.io", role = c("aut", "cre"))
 Description: Designing surveys require relevant datasets to be used as basis for
     sample size calculations, sampling design, survey planning/logistics and
@@ -21,5 +22,8 @@ Suggests:
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
+URL: https://github.com/spatialworks/mozambique
+BugReports: https://github.com/spatialworks/mozambique/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+
