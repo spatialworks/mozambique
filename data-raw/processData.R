@@ -7,6 +7,8 @@ library(raster)
 library(sf)
 library(magrittr)
 library(stringr)
+library(tripack)
+library(geosphere)
 
 ## Objects for URL downloads
 ppl <- "http://export.hotosm.org/downloads/b689022e-a9e7-4ab3-b605-655e9a33699a/hotosm_moz_populated_places_gpkg.zip"
@@ -66,6 +68,60 @@ download.file(ppl, destfile = temp)
 unzip(temp, exdir = tempdir())
 
 ## Get populated places
-villages <- readOGR(dsn = paste(tempdir(), "hotosm_moz_populated_places.gpkg", sep = "/"),
-                    layer = "Populated Places", require_geomType = "wkbPoint")
-#usethis::use_data(villages, overwrite = TRUE, compress = "xz")
+ppl <- readOGR(dsn = paste(tempdir(), "hotosm_moz_populated_places.gpkg", sep = "/"),
+               layer = "Populated Places", require_geomType = "wkbPoint")
+
+ppl@data$name <- ppl@data$name %>%
+  stringr::str_replace_all(pattern = "¾vÒ", replacement = "i") %>%
+  stringr::str_replace_all(pattern = "ç", replacement = "c") %>%
+  stringr::str_replace_all(pattern = "ú", replacement = "u")
+
+ppl@data$is_in <- ppl@data$is_in %>%
+  stringr::str_replace_all(pattern = "ç", replacement = "c")
+
+usethis::use_data(ppl, overwrite = TRUE, compress = "xz")
+
+
+towns <- subset(ppl, place %in% c("town", "city"))
+cities <- subset(ppl, place == "city")
+
+townTri <- rgeos::gDelaunayTriangulation(spgeom = towns, onlyEdges = FALSE)
+#townTri <- raster::intersect(townTri, country)
+cityTri <- rgeos::gDelaunayTriangulation(spgeom = cities, onlyEdges = FALSE)
+
+
+##
+triTowns <- tripack::tri.mesh(x = towns@coords[ , 1], y = towns@coords[ , 2])
+nb <- tripack::neighbours(triTowns)
+
+##
+distTowns <- geosphere::distm(towns)
+
+listDist <- NULL
+
+for(i in seq_len(length(nb))) {
+  xx <- NULL
+  for(j in nb[[i]]) {
+    yy <- c(xx, distTowns[i, j])
+  }
+  listDist <- c(listDist, yy)
+}
+
+listDist <- listDist / 1000
+
+mDist <- median(listDist)
+
+
+
+
+plot(provincias)
+plot(townTri, border = "blue", add = TRUE)
+plot(towns, pch = 16, cex = 0.5, col = "red", add = TRUE)
+
+plot(provincias)
+plot(cityTri, border = "blue", add = TRUE)
+plot(cities, pch = 16, cex = 0.5, col = "red", add = TRUE)
+
+
+##
+
