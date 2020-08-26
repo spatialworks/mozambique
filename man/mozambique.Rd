@@ -20,6 +20,14 @@ Designing surveys require relevant datasets to be used as basis for
     can be used for estimating indicator variance and design effects. This package
     contains relevant datasets for use in designing surveys in Mozambique.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/spatialworks/mozambique}
+  \item Report bugs at \url{https://github.com/spatialworks/mozambique/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Ernest Guevarra \email{ernest@guevarra.io} (\href{https://orcid.org/0000-0002-4887-4415}{ORCID})
 
