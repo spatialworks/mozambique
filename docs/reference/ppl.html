@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mozambique settlements locations — settlements • mozambique</title>
+<title>Mozambique populated places locations — ppl • mozambique</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Mozambique settlements locations — settlements" />
-<meta property="og:description" content="Mozambique settlements locations" />
+<meta property="og:title" content="Mozambique populated places locations — ppl" />
+<meta property="og:description" content="Mozambique populated places locations" />
 
 
 
@@ -103,59 +103,42 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Mozambique settlements locations</h1>
+    <h1>Mozambique populated places locations</h1>
     
-    <div class="hidden name"><code>settlements.Rd</code></div>
+    <div class="hidden name"><code>ppl.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Mozambique settlements locations</p>
+    <p>Mozambique populated places locations</p>
     </div>
 
-    <pre class="usage"><span class='no'>settlements</span></pre>
+    <pre class="usage"><span class='no'>ppl</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A <code>SpatialPointsDataFrame</code> object containing settlements locations of
-Mozambique</p>
+    <p>A <code>SpatialPointsDataFrame</code> object containing populated places
+locations of Mozambique</p>
 <p>| <strong>Variables</strong> | <strong>Description</strong> |
-| <em>OBJECTID</em> | Object identifier |
-| <em>FID_1</em> | Feature identifier |
-| <em>Sett_Name</em> | Settlement name |
-| <em>F_CLASS</em> | Feature class |
-| <em>F_DESIG</em> | Feature designation |
-| <em>ADM1_Old</em> | Administrative level 1 name - old |
-| <em>ADM2_Old</em> | Administrative level 2 name - old |
-| <em>Country</em> | Country name |
-| <em>ISO3</em> | Tree letter code for country |
-| <em>ADM1_Name</em> | Administrative level 1 name - current |
-| <em>ADM1_Code</em> | Administrative level 1 code - current |
-| <em>ADM1_ID</em> | Administrative level 1 identifier - current |
-| <em>ADM2_Name</em> | Administrative level 2 name - current |
-| <em>ADM2_Code</em> | Administrative level 2 code - current |
-| <em>ADM2_ID</em> | Administrative level 2 identifier - current |
-| <em>ADM3_Name</em> | Administrative level 3 name - current |
-| <em>ADM3_Code</em> | Administrative level 3 code - current |
-| <em>ADM3_ID</em> | Administrative level 3 identifier - current |
-| <em>ADM3_Type</em> | Administrative level 3 type - current |
-| <em>ADM3_TypeE</em> | Administrative level 3 type in English - current |
-| <em>Latitude</em> | Latitude coordinate |
-| <em>Longitude</em> | Longitude coordinate |
-| <em>SHAPE_Leng</em> | Shape length |</p>
+| <em>osm_id</em> | OpenStreetMap identifier |
+| <em>name</em> | Name of populated place |
+| <em>source</em> | Source of data for populated place |
+| <em>population</em> | Population size |
+| <em>is_in</em> | Populated place is in? |
+| <em>place</em> | Type of place |</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>https://data.humdata.org/dataset/mozambique-settlement-shapefiles</p>
+    <p>https://data.humdata.org/dataset/hotosm_moz_populated_places</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>settlements</span></div><div class='output co'>#&gt; class       : SpatialPointsDataFrame 
-#&gt; features    : 24602 
-#&gt; extent      : 30.2313, 40.8344, -26.8511, -10.5427  (xmin, xmax, ymin, ymax)
+    <pre class="examples"><div class='input'><span class='no'>ppl</span></div><div class='output co'>#&gt; class       : SpatialPointsDataFrame 
+#&gt; features    : 2154 
+#&gt; extent      : 30.40095, 40.81524, -26.86414, -10.59017  (xmin, xmax, ymin, ymax)
 #&gt; crs         : +proj=longlat +datum=WGS84 +no_defs 
-#&gt; variables   : 23
-#&gt; names       : OBJECTID, FID_1,  Sett_Name, F_CLASS, F_DESIG,     ADM1_Old,     ADM2_Old,    Country, ISO3,    ADM1_Name, ADM1_Code, ADM1_ID,    ADM2_Name, ADM2_Code, ADM2_ID, ... 
-#&gt; min values  :        1,     0, 7 de Abril,       P,     PPL, Cabo Delgado, Alto Molocue, Mozambique,  MOZ, Cabo Delgado,      MZ01,      01, Alto Molocue,   MZ01001,     001, ... 
-#&gt; max values  :     9999,  9999,       Zuze,       P,     PPL,     Zambezia,        Zumbu, Mozambique,  MOZ,     Zambezia,      MZ10,      10,        Zumbu,   MZ10128,     128, ... </div><div class='input'>
+#&gt; variables   : 6
+#&gt; names       :     osm_id,      name,                          source, population,                    is_in,   place 
+#&gt; min values  : 1069515453, 1 de Maio, Africover - Towns (other towns),     108824, Cabo Delgado, Mozambique,    city 
+#&gt; max values  :  965844654,      集落,               www.prodel.gov.mz,      93681,     Zambezia, Mozambique, village </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
