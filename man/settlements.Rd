@@ -15,6 +15,23 @@ Mozambique
 | \emph{F_CLASS} | Feature class |
 | \emph{F_DESIG} | Feature designation |
 | \emph{ADM1_Old} | Administrative level 1 name - old |
+| \emph{ADM2_Old} | Administrative level 2 name - old |
+| \emph{Country} | Country name |
+| \emph{ISO3} | Tree letter code for country |
+| \emph{ADM1_Name} | Administrative level 1 name - current |
+| \emph{ADM1_Code} | Administrative level 1 code - current |
+| \emph{ADM1_ID} | Administrative level 1 identifier - current |
+| \emph{ADM2_Name} | Administrative level 2 name - current |
+| \emph{ADM2_Code} | Administrative level 2 code - current |
+| \emph{ADM2_ID} | Administrative level 2 identifier - current |
+| \emph{ADM3_Name} | Administrative level 3 name - current |
+| \emph{ADM3_Code} | Administrative level 3 code - current |
+| \emph{ADM3_ID} | Administrative level 3 identifier - current |
+| \emph{ADM3_Type} | Administrative level 3 type - current |
+| \emph{ADM3_TypeE} | Administrative level 3 type in English - current |
+| \emph{Latitude} | Latitude coordinate |
+| \emph{Longitude} | Longitude coordinate |
+| \emph{SHAPE_Leng} | Shape length |
 }
 \source{
 https://data.humdata.org/dataset/mozambique-settlement-shapefiles
