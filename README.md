@@ -1,10 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mozambique: Datasets for Designing Surveys in Mozambique <img src="https://www.cia.gov/library/publications/resources/the-world-factbook/attachments/flags/MZ-flag.jpg" align="right" width="200px" />
+# mozambique: Datasets for Designing Surveys in Mozambique <img src="man/figures/logo.svg" width="200px" align="right"/>
 
 <!-- badges: start -->
 
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![R-CMD-check](https://github.com/spatialworks/mozambique/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
@@ -27,14 +30,6 @@ You can install the development version from
 ``` r
 if(!require(remotes)) install.packages("remotes")
 remotes::install_github("spatialworks/mozambique")
-#>      checking for file ‘/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/RtmpaOgf9q/remotes5fe51a461c3b/spatialworks-mozambique-407a61e/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/RtmpaOgf9q/remotes5fe51a461c3b/spatialworks-mozambique-407a61e/DESCRIPTION’ (395ms)
-#>   ─  preparing ‘mozambique’: (894ms)
-#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>   ─  building ‘mozambique_0.1.0.tar.gz’
-#>      
-#> 
 ```
 
 ## Usage

@@ -1,0 +1,22 @@
+title: mozambique
+
+url: https://spatialworks.io/mozambique
+
+template:
+  params:
+    bootswatch: sandstone
+    #ganalytics: UA-102485058-4
+
+reference:
+- title: Description
+  contents:
+  - mozambique
+
+- title: Data
+  contents:
+  - country
+  - provincias
+  - distritos
+  - postos
+  - settlements
+  - ppl
