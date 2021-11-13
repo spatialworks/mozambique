@@ -5,8 +5,7 @@
 \alias{provincias}
 \title{Mozambique \emph{provincias} borders}
 \format{
-A \code{SpatialPolygonsDataFrame} object containing \emph{provincias} borders of
-Mozambique\tabular{ll}{
+A \code{sf} object containing \emph{provincias} borders of Mozambique\tabular{ll}{
    \strong{Variables} \tab \strong{Description} \cr
    \emph{Shape_Leng} \tab Shape length \cr
    \emph{Shape_Area} \tab Shape area \cr

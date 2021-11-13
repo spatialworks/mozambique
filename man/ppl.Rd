@@ -5,8 +5,7 @@
 \alias{ppl}
 \title{Mozambique populated places locations}
 \format{
-A \code{SpatialPointsDataFrame} object containing populated places
-locations of Mozambique
+A \code{sf} object containing populated places locations of Mozambique
 
 | \strong{Variables} | \strong{Description} |
 | \emph{osm_id} | OpenStreetMap identifier |

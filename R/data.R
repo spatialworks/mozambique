@@ -3,8 +3,7 @@
 #'
 #' Mozambique country borders
 #'
-#' @format A `SpatialPolygonsDataFrame` object containing country borders of
-#'   Mozambique
+#' @format A `sf` object containing country borders of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | :--- | :--- |
@@ -38,8 +37,7 @@
 #'
 #' Mozambique *provincias* borders
 #'
-#' @format A `SpatialPolygonsDataFrame` object containing *provincias* borders of
-#'   Mozambique
+#' @format A `sf` object containing *provincias* borders of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | :--- | :--- |
@@ -72,8 +70,7 @@
 #'
 #' Mozambique *distritos* borders
 #'
-#' @format A `SpatialPolygonsDataFrame` object containing *distritos* borders of
-#'   Mozambique
+#' @format A `sf` object containing *distritos* borders of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | :--- | :--- |
@@ -108,8 +105,7 @@
 #'
 #' Mozambique *postos* borders
 #'
-#' @format A `SpatialPolygonsDataFrame` object containing *postos* borders of
-#'   Mozambique
+#' @format A `sf` object containing *postos* borders of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | :--- | :--- |
@@ -146,8 +142,7 @@
 #'
 #' Mozambique settlements locations
 #'
-#' @format A `SpatialPointsDataFrame` object containing settlements locations of
-#'   Mozambique
+#' @format A `sf` object containing settlements locations of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | *OBJECTID* | Object identifier |
@@ -190,8 +185,7 @@
 #'
 #' Mozambique populated places locations
 #'
-#' @format A `SpatialPointsDataFrame` object containing populated places
-#'   locations of Mozambique
+#' @format A `sf` object containing populated places locations of Mozambique
 #'
 #' | **Variables** | **Description** |
 #' | *osm_id* | OpenStreetMap identifier |
