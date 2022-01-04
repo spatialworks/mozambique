@@ -27,20 +27,26 @@ designing surveys in Mozambique.
 You can install the development version from
 [GitHub](https://github.com/spatialworks/mozambique) with:
 
-``` r
-if(!require(remotes)) install.packages("remotes")
-remotes::install_github("spatialworks/mozambique")
-```
-
 ## Usage
 
 ### Country borders
 
 ``` r
 library(mozambique)
-library(sp)
 
-plot(country)
+## Retrieve country borders
+country <- get_country()
+#> Reading layer `moz_admbnda_adm0_ine_20190607' from data source 
+#>   `/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/Rtmp3k6rOh' 
+#>   using driver `ESRI Shapefile'
+#> Simple feature collection with 1 feature and 13 fields
+#> Geometry type: MULTIPOLYGON
+#> Dimension:     XY
+#> Bounding box:  xmin: 30.21173 ymin: -26.86704 xmax: 40.84041 ymax: -10.47367
+#> Geodetic CRS:  WGS 84
+
+## Plot country borders
+plot(sf::st_geometry(country))
 ```
 
 <img src="man/figures/README-adm0-1.png" width="100%" style="display: block; margin: auto;" />
@@ -48,7 +54,19 @@ plot(country)
 ### Provincias borders
 
 ``` r
-plot(provincias)
+## Retrieve provincias borders
+provincias <- get_provinces()
+#> Reading layer `moz_admbnda_adm1_ine_20190607' from data source 
+#>   `/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/Rtmp3k6rOh' 
+#>   using driver `ESRI Shapefile'
+#> Simple feature collection with 11 features and 13 fields
+#> Geometry type: MULTIPOLYGON
+#> Dimension:     XY
+#> Bounding box:  xmin: 30.21173 ymin: -26.86704 xmax: 40.84041 ymax: -10.47367
+#> Geodetic CRS:  WGS 84
+
+## Plot provincias borders
+plot(sf::st_geometry(provincias))
 ```
 
 <img src="man/figures/README-adm1-1.png" width="100%" style="display: block; margin: auto;" />
@@ -56,7 +74,19 @@ plot(provincias)
 ### Distritos borders
 
 ``` r
-plot(distritos)
+## Retrieve distritos borders
+distritos <- get_districts()
+#> Reading layer `moz_admbnda_adm2_ine_20190607' from data source 
+#>   `/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/Rtmp3k6rOh' 
+#>   using driver `ESRI Shapefile'
+#> Simple feature collection with 159 features and 15 fields
+#> Geometry type: MULTIPOLYGON
+#> Dimension:     XY
+#> Bounding box:  xmin: 30.21173 ymin: -26.86704 xmax: 40.84041 ymax: -10.47367
+#> Geodetic CRS:  WGS 84
+
+## Plot distritos borders
+plot(sf::st_geometry(distritos))
 ```
 
 <img src="man/figures/README-adm2-1.png" width="100%" style="display: block; margin: auto;" />
@@ -64,7 +94,19 @@ plot(distritos)
 ### Postos borders
 
 ``` r
-plot(postos)
+## Retrieve postos borders
+postos <- get_posts()
+#> Reading layer `moz_admbnda_adm3_ine_20190607' from data source 
+#>   `/private/var/folders/fk/s0yv8hhn2cs_nfsmzhm4dmhc0000gn/T/Rtmp3k6rOh' 
+#>   using driver `ESRI Shapefile'
+#> Simple feature collection with 411 features and 17 fields
+#> Geometry type: MULTIPOLYGON
+#> Dimension:     XY
+#> Bounding box:  xmin: 30.21173 ymin: -26.86704 xmax: 40.84041 ymax: -10.47367
+#> Geodetic CRS:  WGS 84
+
+## Plot postos borders
+plot(sf::st_geometry(postos))
 ```
 
 <img src="man/figures/README-adm3-1.png" width="100%" style="display: block; margin: auto;" />
@@ -72,8 +114,8 @@ plot(postos)
 ### Settlements
 
 ``` r
-plot(provincias)
-plot(settlements, pch = 16, cex = 0.2, col = "blue", add = TRUE)
+plot(sf::st_geometry(provincias))
+plot(sf::st_geometry(settlements), pch = 16, cex = 0.2, col = "blue", add = TRUE)
 ```
 
 <img src="man/figures/README-settlements-1.png" width="100%" style="display: block; margin: auto;" />
