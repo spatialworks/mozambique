@@ -21,7 +21,7 @@
 download_shapefiles <- function(.unzip = TRUE) {
   folder <- tempdir()
   filename <- tempfile() %>%
-    stringr::str_remove(pattern = paste0(folder, "/"))
+    stringr::str_remove(pattern = paste0(folder, "\\/"))
 
   path <- rhdx::pull_dataset(
     identifier = "mozambique-administrative-levels-0-3"
