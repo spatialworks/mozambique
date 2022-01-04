@@ -24,12 +24,12 @@ unzip(temp, exdir = tempdir())
 #country <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm0_ine_20190607")
 country <- st_read(dsn = tempdir(), layer = "moz_admbnda_adm0_ine_20190607")
 country$ADM0_PT <- "Mocambique"
-usethis::use_data(country, overwrite = TRUE, compress = "xz")
+#usethis::use_data(country, overwrite = TRUE, compress = "xz")
 
 #provincias <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm1_ine_20190607")
 provincias <- st_read(dsn = tempdir(), layer = "moz_admbnda_adm1_ine_20190607")
 provincias$ADM0_PT <- "Mocambique"
-usethis::use_data(provincias, overwrite = TRUE, compress = "xz")
+#usethis::use_data(provincias, overwrite = TRUE, compress = "xz")
 
 #distritos <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm2_ine_20190607")
 distritos <- st_read(dsn = tempdir(), layer = "moz_admbnda_adm2_ine_20190607")
@@ -37,7 +37,7 @@ distritos$ADM0_PT <- "Mocambique"
 distritos$ADM2_PT <- distritos$ADM2_PT %>%
   stringr::str_replace_all(pattern = "ç", replacement = "c") %>%
   stringr::str_replace_all(pattern = "ú", replacement = "u")
-usethis::use_data(distritos, overwrite = TRUE, compress = "xz")
+#usethis::use_data(distritos, overwrite = TRUE, compress = "xz")
 
 #postos <- readOGR(dsn = tempdir(), layer = "moz_admbnda_adm3_ine_20190607")
 postos <- st_read(dsn = tempdir(), layer = "moz_admbnda_adm3_ine_20190607")
@@ -51,7 +51,7 @@ postos$ADM2_PT <- postos$ADM2_PT %>%
 postos$ADM3_PT <- postos$ADM3_PT %>%
   stringr::str_replace_all(pattern = "ç", replacement = "c") %>%
   stringr::str_replace_all(pattern = "ú", replacement = "u")
-usethis::use_data(postos, overwrite = TRUE, compress = "xz")
+#usethis::use_data(postos, overwrite = TRUE, compress = "xz")
 
 ## Download - settlements
 temp <- tempfile()

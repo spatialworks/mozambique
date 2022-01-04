@@ -42,26 +42,41 @@ remotes::install_github("spatialworks/mozambique")
 
 ```{r adm0, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
 library(mozambique)
-library(sp)
 
+## Retrieve country borders
+country <- get_country()
+
+## Plot country borders
 plot(country)
 ```
 
 ### Provincias borders
 
 ```{r adm1, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
+## Retrieve provincias borders
+provincias <- get_provinces()
+
+## Plot provincias borders
 plot(provincias)
 ```
 
 ### Distritos borders
 
 ```{r adm2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
+## Retrieve distritos borders
+distritos <- get_districts()
+
+## Plot distritos borders
 plot(distritos)
 ```
 
 ### Postos borders
 
 ```{r adm3, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
+## Retrieve postos borders
+postos <- get_posts()
+
+## Plot postos borders
 plot(postos)
 ```
 

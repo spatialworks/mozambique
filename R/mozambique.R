@@ -13,6 +13,11 @@
 #' @docType package
 #' @name mozambique
 #' @keywords internal
+#' @importFrom utils unzip
+#' @importFrom rhdx pull_dataset get_resource download_resource
+#' @importFrom sf st_read
+#' @importFrom magrittr %>%
+#' @importFrom stringr str_detect str_split
 #'
 #'
 #
