@@ -2,7 +2,7 @@ pandoc: 2.14.0.3
 pkgdown: 2.0.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-01-04T12:38Z
+last_built: 2022-01-04T16:43Z
 urls:
   reference: https://spatialworks.io/mozambique/reference
   article: https://spatialworks.io/mozambique/articles

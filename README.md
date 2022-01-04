@@ -36,7 +36,7 @@ library(mozambique)
 
 ## Retrieve country borders
 country <- get_country()
-#> Reading layer `moz_admbnda_adm0_ine_20190607' from data source `/tmp/RtmpT96T8w' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm0_ine_20190607' from data source `/tmp/RtmpI4hKxv' using driver `ESRI Shapefile'
 #> Simple feature collection with 1 feature and 13 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -54,7 +54,7 @@ plot(sf::st_geometry(country))
 ``` r
 ## Retrieve provincias borders
 provincias <- get_provinces()
-#> Reading layer `moz_admbnda_adm1_ine_20190607' from data source `/tmp/RtmpT96T8w' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm1_ine_20190607' from data source `/tmp/RtmpI4hKxv' using driver `ESRI Shapefile'
 #> Simple feature collection with 11 features and 13 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -72,7 +72,7 @@ plot(sf::st_geometry(provincias))
 ``` r
 ## Retrieve distritos borders
 distritos <- get_districts()
-#> Reading layer `moz_admbnda_adm2_ine_20190607' from data source `/tmp/RtmpT96T8w' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm2_ine_20190607' from data source `/tmp/RtmpI4hKxv' using driver `ESRI Shapefile'
 #> Simple feature collection with 159 features and 15 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -90,7 +90,7 @@ plot(sf::st_geometry(distritos))
 ``` r
 ## Retrieve postos borders
 postos <- get_posts()
-#> Reading layer `moz_admbnda_adm3_ine_20190607' from data source `/tmp/RtmpT96T8w' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm3_ine_20190607' from data source `/tmp/RtmpI4hKxv' using driver `ESRI Shapefile'
 #> Simple feature collection with 411 features and 17 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
