@@ -10,7 +10,8 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R-CMD-check](https://github.com/spatialworks/mozambique/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
+[![R-CMD-check](https://github.com/spatialworks/mozambiqhttps://github.com/spatialworks/mozambique/projects?type=betaue/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
+[![test-coverage](https://github.com/spatialworks/mozambique/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/spatialworks/mozambique/actions/workflows/test-coverage.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/spatialworks/mozambique/branch/master/graph/badge.svg)](https://app.codecov.io/gh/spatialworks/mozambique?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/spatialworks/mozambique/badge)](https://www.codefactor.io/repository/github/spatialworks/mozambique)
@@ -38,7 +39,7 @@ library(mozambique)
 
 ## Retrieve country borders
 country <- get_country()
-#> Reading layer `moz_admbnda_adm0_ine_20190607' from data source `/tmp/RtmpIUiort' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm0_ine_20190607' from data source `/tmp/Rtmpgl80LY' using driver `ESRI Shapefile'
 #> Simple feature collection with 1 feature and 13 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -56,7 +57,7 @@ plot(sf::st_geometry(country))
 ``` r
 ## Retrieve provincias borders
 provincias <- get_provinces()
-#> Reading layer `moz_admbnda_adm1_ine_20190607' from data source `/tmp/RtmpIUiort' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm1_ine_20190607' from data source `/tmp/Rtmpgl80LY' using driver `ESRI Shapefile'
 #> Simple feature collection with 11 features and 13 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -74,7 +75,7 @@ plot(sf::st_geometry(provincias))
 ``` r
 ## Retrieve distritos borders
 distritos <- get_districts()
-#> Reading layer `moz_admbnda_adm2_ine_20190607' from data source `/tmp/RtmpIUiort' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm2_ine_20190607' from data source `/tmp/Rtmpgl80LY' using driver `ESRI Shapefile'
 #> Simple feature collection with 159 features and 15 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
@@ -92,7 +93,7 @@ plot(sf::st_geometry(distritos))
 ``` r
 ## Retrieve postos borders
 postos <- get_posts()
-#> Reading layer `moz_admbnda_adm3_ine_20190607' from data source `/tmp/RtmpIUiort' using driver `ESRI Shapefile'
+#> Reading layer `moz_admbnda_adm3_ine_20190607' from data source `/tmp/Rtmpgl80LY' using driver `ESRI Shapefile'
 #> Simple feature collection with 411 features and 17 fields
 #> Geometry type: MULTIPOLYGON
 #> Dimension:     XY
