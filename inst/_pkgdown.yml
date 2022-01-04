@@ -19,12 +19,17 @@ reference:
   contents:
   - mozambique
 
+- title: Get administrative boundaries
+  contents:
+    - download_shapefiles
+    - get_layer_name
+    - get_country
+    - get_provinces
+    - get_districts
+    - get_posts
+
 - title: Datasets
   contents:
-  - country
-  - provincias
-  - distritos
-  - postos
   - settlements
   - ppl
 
