@@ -5,8 +5,7 @@
 \alias{settlements}
 \title{Mozambique settlements locations}
 \format{
-A \code{SpatialPointsDataFrame} object containing settlements locations of
-Mozambique
+A \code{sf} object containing settlements locations of Mozambique
 
 | \strong{Variables} | \strong{Description} |
 | \emph{OBJECTID} | Object identifier |
