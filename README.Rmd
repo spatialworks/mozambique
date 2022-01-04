@@ -31,11 +31,6 @@ Designing surveys require relevant datasets to be used as basis for sample size 
 
 You can install the development version from [GitHub](https://github.com/spatialworks/mozambique) with:
 
-```{r install, echo = TRUE, eval = TRUE}
-if(!require(remotes)) install.packages("remotes")
-remotes::install_github("spatialworks/mozambique")
-```
-
 ## Usage
 
 ### Country borders
@@ -47,7 +42,7 @@ library(mozambique)
 country <- get_country()
 
 ## Plot country borders
-plot(country)
+plot(sf::st_geometry(country))
 ```
 
 ### Provincias borders
@@ -57,7 +52,7 @@ plot(country)
 provincias <- get_provinces()
 
 ## Plot provincias borders
-plot(provincias)
+plot(sf::st_geometry(provincias))
 ```
 
 ### Distritos borders
@@ -67,7 +62,7 @@ plot(provincias)
 distritos <- get_districts()
 
 ## Plot distritos borders
-plot(distritos)
+plot(sf::st_geometry(distritos))
 ```
 
 ### Postos borders
@@ -77,12 +72,12 @@ plot(distritos)
 postos <- get_posts()
 
 ## Plot postos borders
-plot(postos)
+plot(sf::st_geometry(postos))
 ```
 
 ### Settlements
 
 ```{r settlements, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
-plot(provincias)
-plot(settlements, pch = 16, cex = 0.2, col = "blue", add = TRUE)
+plot(sf::st_geometry(provincias))
+plot(sf::st_geometry(settlements), pch = 16, cex = 0.2, col = "blue", add = TRUE)
 ```
