@@ -20,7 +20,7 @@ Imports:
     magrittr,
     stringr
 Remotes: 
-    dickoa/rhdx  
+    gitlab::dickoa/rhdx  
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
