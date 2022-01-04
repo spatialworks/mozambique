@@ -20,17 +20,17 @@
 
 download_shapefiles <- function(.unzip = TRUE) {
   folder <- tempdir()
-  filename <- tempfile() %>%
-    stringr::str_split(pattern = "\\/") %>%
-    unlist() %>%
-    utils::tail(1)
+  #filename <- tempfile() %>%
+  #  stringr::str_split(pattern = "\\/") %>%
+  #  unlist() %>%
+  #  utils::tail(1)
 
 
   path <- rhdx::pull_dataset(
     identifier = "mozambique-administrative-levels-0-3"
   ) %>%
     rhdx::get_resource(index = 2) %>%
-    rhdx::download_resource(folder = folder, filename = filename)
+    rhdx::download_resource(folder = folder)
 
   ## Unzip file?
   if (.unzip) {
