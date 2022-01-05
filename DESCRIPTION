@@ -15,16 +15,16 @@ License: GPL (>= 3)
 Depends: 
     R (>= 2.10)
 Imports: 
-    rhdx (>= 0.1.0.9000),
     sf,
     magrittr,
-    stringr
+    stringr,
+    rhdx (>= 0.1.0.9000)
 Suggests: 
     spelling,
     covr,
     testthat (>= 3.0.0)
-Remotes: 
-    dickoa/rhdx  
+Remotes:  
+    github::dickoa/rhdx
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
