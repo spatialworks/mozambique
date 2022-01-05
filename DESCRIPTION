@@ -24,7 +24,7 @@ Suggests:
     covr,
     testthat (>= 3.0.0)
 Remotes: 
-    gitlab::dickoa/rhdx  
+    dickoa/rhdx  
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
