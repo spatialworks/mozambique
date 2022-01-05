@@ -25,7 +25,7 @@ jobs:
         with:
           extra-packages: |
             covr
-            dickoa/rhdx
+            gitlab::dickoa/rhdx
 
       - name: Test coverage
         run: covr::codecov()
