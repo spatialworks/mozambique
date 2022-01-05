@@ -21,7 +21,9 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R-CMD-check](https://github.com/spatialworks/mozambique/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
+[![R-CMD-check](https://github.com/spatialworks/mozambiqhttps://github.com/spatialworks/mozambique/projects?type=betaue/workflows/R-CMD-check/badge.svg)](https://github.com/spatialworks/mozambique/actions?query=workflow%3AR-CMD-check)
+[![test-coverage](https://github.com/spatialworks/mozambique/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/spatialworks/mozambique/actions/workflows/test-coverage.yaml)
+[![Codecov test coverage](https://codecov.io/gh/spatialworks/mozambique/branch/master/graph/badge.svg)](https://app.codecov.io/gh/spatialworks/mozambique?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/spatialworks/mozambique/badge)](https://www.codefactor.io/repository/github/spatialworks/mozambique)
 <!-- badges: end -->
 
