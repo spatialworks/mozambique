@@ -29,6 +29,7 @@ RoxygenNote: 7.1.2
 URL: https://github.com/spatialworks/mozambique, https://spatialworks.io/mozambique/
 BugReports: https://github.com/spatialworks/mozambique/issues
 Suggests: 
+    spelling,
     covr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
