@@ -13,7 +13,7 @@ that can be used for estimating indicator variance and design effects. This
 package contains relevant datasets for use in designing surveys in
 Mozambique.}
 \description{
-Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in Mozambique.
+Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datahttps://github.com/spatialworks/mozambique/pull/11/commits/f76d65528af626e4c3c60a92bbb23669e884d2easets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in Mozambique.
 }
 \seealso{
 Useful links:
