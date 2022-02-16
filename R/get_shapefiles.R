@@ -3,6 +3,7 @@
 #'
 #' Download Mozambique shapefiles
 #'
+#' @param id Identifier for Mozambique administrative boundaries from HDX.
 #' @param .unzip Logical. Should zip file be unzipped and extracted? Default to
 #'   TRUE
 #'
@@ -18,13 +19,14 @@
 #
 ################################################################################
 
-download_shapefiles <- function(.unzip = TRUE) {
+download_shapefiles <- function(id = "cod-ab-moz",
+                                .unzip = TRUE) {
   folder <- tempdir()
   filename <- tempfile() %>%
     stringr::str_remove(pattern = paste0(folder, "/"))
 
   path <- rhdx::pull_dataset(
-    identifier = "mozambique-administrative-levels-0-3"
+    identifier = id
   ) %>%
     rhdx::get_resource(index = 2) %>%
     rhdx::download_resource(folder = folder, filename = filename)
