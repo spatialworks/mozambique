@@ -4,9 +4,11 @@
 \alias{download_shapefiles}
 \title{Download Mozambique shapefiles}
 \usage{
-download_shapefiles(.unzip = TRUE)
+download_shapefiles(id = "cod-ab-moz", .unzip = TRUE)
 }
 \arguments{
+\item{id}{Identifier for Mozambique administrative boundaries from HDX.}
+
 \item{.unzip}{Logical. Should zip file be unzipped and extracted? Default to
 TRUE}
 }
